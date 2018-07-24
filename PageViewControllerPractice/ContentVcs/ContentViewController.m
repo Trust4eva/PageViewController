@@ -9,6 +9,8 @@
 #import "ContentViewController.h"
 
 @interface ContentViewController ()
+@property (strong,nonatomic) UIPageControl *pageControl;
+
 
 @end
 
@@ -17,7 +19,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = UIColor.blueColor;
+   self.view.backgroundColor = UIColor.blueColor;
+    
+    self.pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(128, 558 , 120, 40)];
+    self.pageControl.numberOfPages = 3;
+    self.pageControl.currentPage = 0;
+    self.pageControl.tintColor = UIColor.blackColor;
+    self.pageControl.backgroundColor = UIColor.greenColor;
+    self.pageControl.pageIndicatorTintColor = UIColor.whiteColor;
+    self.pageControl.currentPageIndicatorTintColor = UIColor.blackColor;
+    [self.view addSubview:self.pageControl];
 }
 
 - (void)didReceiveMemoryWarning {

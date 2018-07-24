@@ -6,17 +6,17 @@
 //  Copyright © 2018 xToBeAnnounce. All rights reserved.
 //
 
-#import "3Content3ViewController.h"
+#import "Content3ViewController.h"
 
-@interface _Content3ViewController ()
+@interface Content3ViewController ()
 
 @end
 
-@implementation _Content3ViewController
+@implementation Content3ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = UIColor.redColor;
 }
 
 - (void)didReceiveMemoryWarning {

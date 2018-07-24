@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ContentViewController.h
 //  PageViewControllerPractice
 //
 //  Created by Trustin Harris on 7/23/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ContentViewController : UIViewController
 
 @end
-

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "PageViewController.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -20,7 +21,9 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
-    PageViewController *PageVC = [[PageViewController alloc]initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+   PageViewController *PageVC = [[PageViewController alloc]initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
+
+    
     self.window.rootViewController = PageVC;
     [self.window makeKeyAndVisible];
     

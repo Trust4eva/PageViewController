@@ -25,7 +25,6 @@
     [super viewDidLoad];
     self.dataSource = self;
     self.delegate = self;
-    [self configurePageControl];
     
     //creates instances of the Viewcontrollers
     ContentViewController *content1VC = [[ContentViewController alloc]init];
@@ -34,14 +33,12 @@
     
     self.viewControllerArrary = @[content1VC,content2VC,content3VC];
     [self setViewControllers:@[content1VC] direction:UIPageViewControllerNavigationDirectionReverse animated:NO completion: nil];
-    
+    [self configurePageControl];
     
 }
 
-
-
 -(void)configurePageControl{
-    self.pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(128, 558 , 120, 40)];
+    self.pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(128, 630 , 120, 40)];
     self.pageControl.numberOfPages = self.viewControllerArrary.count;
     self.pageControl.currentPage = 0;
     self.pageControl.tintColor = UIColor.blackColor;
